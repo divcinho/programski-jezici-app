@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/new-customer.css">
+    <title> Editovanje kupca </title>
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Red_Star_Belgrade_crest.svg/1200px-Red_Star_Belgrade_crest.svg.png" class="navbar-logo">
+            </a>
+            <div class="navlink-wrapper"> 
+                <a href="/customer.html"> Kupci karata</a>
+                <a href="/match.html">Utakmice</a>
+                <a href="/ticket.html">Karte</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1> Izmjenite podatke ovog kupca </h1>
+
+
+            <form id="edit-customer" class="margin-top-64">
+
+                <div class="form-field-wrapper">
+                    <label for="customer-id">ID</label>
+                    <input type="text" id="customer-id" disabled>
+                </div>
+
+                <div class="form-field-wrapper">
+                    <label for="name">Ime</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="form-field-wrapper">
+                    <label for="surname">Prezime</label>
+                    <input type="text" id="surname">
+                </div>
+
+                <div class="form-field-wrapper">
+                    <label for="email-address">Email adresa</label>
+                    <input type="email" id="email-address">
+                </div>
+
+                <div class="form-field-wrapper">
+                    <label for="phone-number">Broj telefona</label>
+                    <input type="text" id="phone-number">
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="primary-cta"> Sačuvajte izmjene </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/edit-customer.js"></script>
+</body>
+</html>

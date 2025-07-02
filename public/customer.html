@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/customer.css">
+    <title> Kupci karata </title>
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Red_Star_Belgrade_crest.svg/1200px-Red_Star_Belgrade_crest.svg.png" class="navbar-logo">
+            </a>
+            <div class="navlink-wrapper"> 
+                <a href="/customer.html"> Kupci karata</a>
+                <a href="/match.html">Utakmice</a>
+                <a href="/ticket.html">Karte</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1> Informacije o kupcima karata </h1>
+            <p class="hero-paragraph">Pogledajte sve kupce karata za utakmice Crvene zvezde. Dodajte novog korisnika, izmjenite podatke postojećeg korisnika ili izbrišite postojećeg korisnika.</p>
+            <div class="primary-cta">
+                <a href="/new/customer.html">Dodajte novog kupca</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Ime i prezime</th>
+                        <th>Email adresa</th>
+                        <th>Broj telefona</th>
+                        <th>Vrijeme kreiranja</th>
+                        <th>Vrijeme ažuriranja</th>
+                        <th>Opcije</th>
+                    </tr>
+                </thead>
+
+                <tbody id="customers-table"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <template id="customers-template">
+        <tr>
+            <td class="id"></td>
+            <td class="name"></td>
+            <td class="email-address"></td>
+            <td class="phone-number"></td>
+            <td class="created-at"></td>
+            <td class="updated-at"></td>
+            <td class="options">
+                <div class="table-buttons-wrapper">
+                    <div class="edit-button">
+                        <a href="#" class="edit-button-link"> <img src="/assets/edit-icon.svg"> </a>
+                    </div>
+                    <button class="delete-button"> <img src="/assets/delete-icon.svg"> </button>
+                </div>
+            </td>
+        </tr>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/customers.js"></script>
+</body>
+</html>

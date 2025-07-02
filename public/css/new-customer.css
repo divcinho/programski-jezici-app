@@ -1,0 +1,17 @@
+/* Form */
+form {
+    width: 400px;
+}
+
+.form-field-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+form input {
+    padding: 12px;
+    background-color: rgb(245, 245, 245);
+    border: 0.5px solid rgb(175, 175, 175);
+    border-radius: 4px;
+}
