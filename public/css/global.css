@@ -1,4 +1,86 @@
-.navbar{
-    background-color: rgb(251, 65, 65);
-    height: 72px;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+body p {
+    opacity: 0.85;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(245, 245, 245);
+    border-bottom: 0.5px solid rgb(175, 175, 175);
+    padding: 16px 0;
+}
+
+.navbar-container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 48px;
+}
+
+.navlink-wrapper {
+    display: flex;
+    gap: 32px;
+    margin-left: 64px;
+}
+
+.navlink-wrapper a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.navlink-wrapper a:hover {
+    text-decoration: underline; 
+}
+
+
+/* Global */
+.margin-top-24 {
+    margin-top: 24px;
+}
+
+
+/* Content container */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+    align-items: center;
+}
+
+
+/* Headings */
+h1 {
+    max-width: 1000px;
+    line-height: 110%;
+    color: rgb(198, 17, 17);
+    font-size: 64px;
+    text-align: center;
+}
+
+
+/* Sections */
+.hero-section {
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+
+.section {
+    padding: 64px 0px;
 }

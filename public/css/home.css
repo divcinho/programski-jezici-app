@@ -1,0 +1,39 @@
+/* UI Card */
+.card-holder {
+    display: flex;
+    gap: 32px;
+}
+
+.card-holder .card {
+    width: 33%;
+    background-color: rgb(245, 245, 245);
+    border: 0.5px solid #DCA152;
+    border-radius: 4px;
+    padding: 32px;
+}
+
+.card img {
+    height: 32px;
+    margin-bottom: 16px;
+}
+
+.card h2 {
+    line-height: 100%;
+    margin: 0;
+}
+
+.card p {
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(198, 17, 17);
+    font-weight: bold;
+    transition: 300ms ease-in-out;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
