@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/ticket.css">
+    <title> Karte </title>
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Red_Star_Belgrade_crest.svg/1200px-Red_Star_Belgrade_crest.svg.png" class="navbar-logo">
+            </a>
+            <div class="navlink-wrapper"> 
+                <a href="/customer.html"> Kupci karata</a>
+                <a href="/match.html">Utakmice</a>
+                <a href="/ticket.html">Karte</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1> Informacije o kartama </h1>
+            <p class="hero-paragraph">Pogledajte sve rezervisane karte za utakmice Crvene zvezde. Dodajte novu kartu, izmjenite podatke postojeće karte ili izbrišite postojeću kartu.</p>
+            <div class="primary-cta">
+                <a href="/new/ticket.html">Dodajte novu kartu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Ime i prezime kupca</th>
+                        <th>Utakmica</th>
+                        <th>Tribina</th>
+                        <th>Sektor</th>
+                        <th>Sjedište</th>
+                        <th>Cijena</th>
+                        <th>Vrijeme plaćanja</th>
+                        <th>Vrijeme upotrebe</th>
+                        <th>Vrijeme kreiranja</th>
+                        <th>Vrijeme ažuriranja</th>
+                        <th>Opcije</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tickets-table"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <template id="tickets-template">
+        <tr>
+            <td class="id"></td>
+            <td class="customer-name-surname"></td>
+            <td class="match-home-away"></td>
+            <td class="stand"></td>
+            <td class="sector"></td>
+            <td class="seat"></td>
+            <td class="price"></td>
+            <td class="paid-at"></td>
+            <td class="used-at"></td>
+            <td class="created-at"></td>
+            <td class="updated-at"></td>
+            <td class="options">
+                <div class="table-buttons-wrapper">
+                    <div class="edit-button">
+                        <a href="#" class="edit-button-link"> <img src="/assets/edit-icon.svg"> </a>
+                    </div>
+                    <button class="delete-button"> <img src="/assets/delete-icon.svg"> </button>
+                </div>
+            </td>
+        </tr>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/tickets.js"></script>
+</body>
+</html>

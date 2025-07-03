@@ -18,7 +18,7 @@ if(!id || id == ''){
         competition.value = response.data.competition;
 
         let startsAt = document.getElementById('starts-at');
-        startsAt.value = response.data.startsAt;
+        //startsAt.value = response.data.startsAt;
 
         let stadium = document.getElementById('stadium');
         stadium.value = response.data.stadium;
