@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/new-customer.css">
+    <title> Dodavanje karte </title>
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Red_Star_Belgrade_crest.svg/1200px-Red_Star_Belgrade_crest.svg.png" class="navbar-logo">
+            </a>
+            <div class="navlink-wrapper"> 
+                <a href="/customer.html"> Kupci karata</a>
+                <a href="/match.html">Utakmice</a>
+                <a href="/ticket.html">Karte</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1> Dodajte novu kartu </h1>
+
+
+            <form id="add-ticket" class="margin-top-64">
+
+                <div class="form-field-wrapper">
+                    <label for="customer-select">Kupac karte</label>
+                    <select id="customer-select"></select>
+                </div>
+
+                <div class="form-field-wrapper">
+                    <label for="match-select">Utakmica</label>
+                    <select id="match-select"></select>
+                </div>
+
+                <div class="form-field-wrapper">
+                    <label for="stand">Tribina</label>
+                    <input type="text" id="stand">
+                </div>
+
+                <div class="form-field-wrapper">
+                    <label for="sector">Sektor</label>
+                    <input type="text" id="sector">
+                </div>
+
+                <div class="form-field-wrapper">
+                    <label for="seat">Sjedište</label>
+                    <input type="text" id="seat">
+                </div>
+
+                <div class="form-field-wrapper">
+                    <label for="price">Cijena</label>
+                    <input type="number" id="price">
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="primary-cta"> Dodajte novu kartu </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/new-ticket.js"></script>
+</body>
+</html>

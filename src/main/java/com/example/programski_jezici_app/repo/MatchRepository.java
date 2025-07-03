@@ -16,4 +16,6 @@ public interface MatchRepository extends JpaRepository<Match, Integer> {
     Optional<Match> findByIdAndDeletedAtIsNull(Integer id);
 
     List<Match> findAllByStartsAtAfterAndDeletedAtIsNull(LocalDateTime time);
+
+    Boolean existsByIdAndDeletedAtIsNull(Integer id);
 }

@@ -39,14 +39,12 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Ime i prezime kupca</th>
+                        <th>Email adresa kupca</th>
                         <th>Utakmica</th>
                         <th>Tribina</th>
-                        <th>Sektor</th>
                         <th>Sjedište</th>
                         <th>Cijena</th>
                         <th>Vrijeme plaćanja</th>
-                        <th>Vrijeme upotrebe</th>
                         <th>Vrijeme kreiranja</th>
                         <th>Vrijeme ažuriranja</th>
                         <th>Opcije</th>
@@ -61,18 +59,17 @@
     <template id="tickets-template">
         <tr>
             <td class="id"></td>
-            <td class="customer-name-surname"></td>
+            <td class="customer-email"></td>
             <td class="match-home-away"></td>
             <td class="stand"></td>
-            <td class="sector"></td>
             <td class="seat"></td>
             <td class="price"></td>
             <td class="paid-at"></td>
-            <td class="used-at"></td>
             <td class="created-at"></td>
             <td class="updated-at"></td>
             <td class="options">
                 <div class="table-buttons-wrapper">
+                    <button class="pay-button"> <img src="/assets/pay-icon.svg"> </button>
                     <div class="edit-button">
                         <a href="#" class="edit-button-link"> <img src="/assets/edit-icon.svg"> </a>
                     </div>
